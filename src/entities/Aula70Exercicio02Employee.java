@@ -6,9 +6,10 @@ public class Aula70Exercicio02Employee {
     public double tax;
 
 public double netSalary(){
-    return 0;
+    return grossSalary-tax;
 }
-public void increaseSalary(){
-
+public void increaseSalary(double percentage){
+    percentage /= 100;
+    grossSalary = grossSalary * percentage + grossSalary;
 }
 }
